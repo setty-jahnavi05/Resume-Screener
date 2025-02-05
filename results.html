@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Screening Results</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <h2>Resume Screening Results</h2>
+    <p><strong>Similarity Score:</strong> {{ similarity_score }}%</p>
+    
+    <h3>Extracted Resume Text</h3>
+    <p>{{ resume_text }}</p>
+    
+    <h3>Extracted Job Description</h3>
+    <p>{{ job_desc_text }}</p>
+    
+    <br>
+    <a href="/">Upload Another Resume</a>
+</body>
+</html>

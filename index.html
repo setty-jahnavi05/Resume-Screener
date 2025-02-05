@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Screener</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        form { display: inline-block; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: #f9f9f9; }
+        input[type="file"] { margin: 10px 0; }
+        input[type="submit"] { background-color: #28a745; color: white; padding: 10px 15px; border: none; cursor: pointer; }
+        input[type="submit"]:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+    <h2>Upload Resume & Job Description</h2>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label for="resume">Upload Resume (PDF/DOCX):</label>
+        <input type="file" name="resume" required><br><br>
+        
+        <label for="job_desc">Upload Job Description (PDF/DOCX):</label>
+        <input type="file" name="job_desc" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
